@@ -753,6 +753,7 @@ function copyToClipboard(str) {
 // 文件展示 视频 |mp4|webm|avi|
 function file_video(path) {
   const url = window.location.origin + path;
+  let id = await this.findPathId(path);
   let player_items = [
     {
       text: 'MXPlayer(Free)',
@@ -795,7 +796,7 @@ function file_video(path) {
 	<!-- 固定标签 -->
 	<div class="mdui-textfield">
 	  <label class="mdui-textfield-label">下载地址</label>
-	  <input class="mdui-textfield-input" type="text" value="${url}"/>
+	  <input class="mdui-textfield-input" type="text" value="${id}"/>
 	</div>
 	<div class="mdui-textfield">
 	  <label class="mdui-textfield-label">HTML 引用地址</label>
