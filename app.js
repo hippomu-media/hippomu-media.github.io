@@ -795,7 +795,7 @@ function file_video(path) {
 	<!-- 固定标签 -->
 	<div class="mdui-textfield">
 	  <label class="mdui-textfield-label">下载地址</label>
-	  <input class="mdui-textfield-input" type="text" value="${item.name}"/>
+	  <input class="mdui-textfield-input" type="text" value="${url}"/>
 	</div>
 	<div class="mdui-textfield">
 	  <label class="mdui-textfield-label">HTML 引用地址</label>
